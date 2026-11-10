@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Perguntas · Meus Direitos</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="questionario"><a class="skip" href="#main">Ir para o conteúdo</a>
+<header><a class="logo" href="index.html">Meus Direitos</a>
+<div class="tools" role="group" aria-label="Ajustes de leitura"><button id="menos" aria-label="Diminuir letra">A−</button> <button id="mais" aria-label="Aumentar letra">A+</button> <button id="contraste">Alto contraste</button></div>
+<nav aria-label="Etapas"><ol><li>1. Início</li><li aria-current="step">2. Perguntas</li><li>3. Resultado</li><li>4. Passo a passo</li></ol></nav></header><main id="main">
+<p id="pos" aria-live="polite"></p>
+<form id="form" novalidate>
+<fieldset class="pergunta" data-k="pessoas"><legend>Quantas pessoas moram na sua casa?</legend><label for="q1">Número de pessoas (contando você)</label><input id="q1" type="number" min="1" inputmode="numeric"><p class="erro" role="alert"></p></fieldset>
+<fieldset class="pergunta" data-k="renda"><legend>Quanto a família ganha por mês, somando todos?</legend><label for="q2">Valor em reais (se não tem renda, escreva 0)</label><input id="q2" type="number" min="0" inputmode="numeric"><p class="erro" role="alert"></p></fieldset>
+<fieldset class="pergunta" data-k="idoso"><legend>Mora alguém com 65 anos ou mais?</legend><label class="opcao"><input type="radio" name="idoso" value="sim">Sim</label><label class="opcao"><input type="radio" name="idoso" value="nao">Não</label><p class="erro" role="alert"></p></fieldset>
+<fieldset class="pergunta" data-k="def"><legend>Mora alguém com deficiência?</legend><label class="opcao"><input type="radio" name="def" value="sim">Sim</label><label class="opcao"><input type="radio" name="def" value="nao">Não</label><p class="erro" role="alert"></p></fieldset>
+<fieldset class="pergunta" data-k="cad"><legend>Sua família já está no CadÚnico?</legend><label class="opcao"><input type="radio" name="cad" value="sim">Sim</label><label class="opcao"><input type="radio" name="cad" value="nao">Não</label><label class="opcao"><input type="radio" name="cad" value="nao-sei">Não sei</label><p class="erro" role="alert"></p></fieldset>
+<p><button type="button" id="voltar" class="sec">Voltar</button> <button type="submit" id="prox">Próxima</button></p></form>
+</main><footer><p>Protótipo acadêmico · CitizenTech · ODS 1 e 10. Regras simplificadas e dados simulados: confirme no CRAS.</p></footer><script src="data.js"></script><script src="app.js"></script></body></html>
